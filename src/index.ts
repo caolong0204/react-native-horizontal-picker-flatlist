@@ -1,1 +1,1 @@
-export * from './HorizontalPicker';
+export { default as HorizontalPicker } from './HorizontalPicker';

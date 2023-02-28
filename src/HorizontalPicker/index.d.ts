@@ -1,4 +1,6 @@
-export interface HorizontalPickerFlatListProps {
+import { ViewProps } from 'react-native';
+
+export interface HorizontalPickerProps extends ViewProps {
   totalSize?: number;
   rowItems?: number;
   title?: string;

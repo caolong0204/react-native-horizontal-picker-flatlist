@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 import { isNullOrEmpty } from '../utils';
 
-interface HorizontalPickerFlatListProps {
+interface HorizontalPickerProps {
   totalSize?: number;
   rowItems?: number;
   title?: string;
@@ -20,7 +20,7 @@ interface HorizontalPickerFlatListProps {
 }
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
 
-const HorizontalPicker = (props: HorizontalPickerFlatListProps) => {
+const HorizontalPicker = (props: HorizontalPickerProps) => {
   const {
     totalSize = 42,
     rowItems = 7,
