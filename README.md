@@ -15,7 +15,7 @@ import { HorizontalPicker } from 'react-native-horizontal-picker-flatlist';
 
 // ...
 
-<HorizontalPicker onChangeSelected={()=>{console.log("handleSelected")})} initIndex={8} />
+<HorizontalPicker onChangeSelected={(value:number)=>{console.log("handleSelected",value)})} initIndex={8} />
 ```
 
 ## Contributing
