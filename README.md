@@ -11,11 +11,11 @@ npm install react-native-horizontal-picker-flatlist
 ## Usage
 
 ```js
-import { multiply } from 'react-native-horizontal-picker-flatlist';
+import { HorizontalPicker } from 'react-native-horizontal-picker-flatlist';
 
 // ...
 
-const result = await multiply(3, 7);
+<HorizontalPicker onChangeSelected={()=>{console.log("handleSelected")})} initIndex={8} />
 ```
 
 ## Contributing
