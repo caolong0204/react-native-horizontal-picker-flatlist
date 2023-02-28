@@ -9,7 +9,7 @@ import {
   NativeSyntheticEvent,
   Dimensions,
 } from 'react-native';
-import { isNullOrEmpty } from './utils';
+import { isNullOrEmpty } from '../utils';
 
 interface HorizontalPickerFlatListProps {
   totalSize?: number;
@@ -20,7 +20,7 @@ interface HorizontalPickerFlatListProps {
 }
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
 
-const HorizontalPickerFlatList = (props: HorizontalPickerFlatListProps) => {
+const HorizontalPicker = (props: HorizontalPickerFlatListProps) => {
   const {
     totalSize = 42,
     rowItems = 7,
@@ -129,7 +129,7 @@ const HorizontalPickerFlatList = (props: HorizontalPickerFlatListProps) => {
   );
 };
 
-export default HorizontalPickerFlatList;
+export default HorizontalPicker;
 const createNewArray = (totalSize: number, rowSize: number) => {
   const emptySize = (rowSize - 1) / 2;
   const result = Array.from({ length: emptySize });
